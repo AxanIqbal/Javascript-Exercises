@@ -31,4 +31,8 @@ const my_list = [
   },
 ];
 
-console.log(my_list[my_list.length]);
+const my_value = my_list.find((value) => {
+  return value.name === "languages";
+});
+
+console.log(my_value);

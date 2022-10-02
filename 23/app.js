@@ -1,0 +1,12 @@
+const name = "Ahsan";
+const age = 26;
+console.log(name === "Ahsan");
+console.log(name === "Ahsan" && typeof name === "string");
+console.log(name === "Ahsan" || typeof name === "string");
+console.log(typeof age !== "integer");
+console.log(age === 26);
+console.log(age === 27);
+console.log(age === 26 && typeof age === "integer");
+console.log(age === 27 || typeof age === "string");
+console.log(name !== "Ahsan");
+console.log(typeof name !== "string");
