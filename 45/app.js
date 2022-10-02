@@ -1,7 +1,16 @@
-function sandwiches(ingredients) {
-  console.log("The ingredients of the sandwich is " + ingredients.join(", "));
+function car(manufacturer, model) {
+  const extras = {};
+  for (let index = 2; index < arguments.length; index++) {
+    if (arguments[index]) {
+      const element = arguments[index].split(":");
+      extras[element[0]] = element[1];
+    }
+  }
+  return {
+    manufacturer: manufacturer,
+    model: model,
+    ...extras,
+  };
 }
 
-sandwiches(["tomato's", "veg", "eggs"]);
-sandwiches(["tomato's", "veg", "eggs", "chicken pieces"]);
-sandwiches(["tomato's", "eggs", "chicken pieces"]);
+console.log(car("nesan", "123", "color:test"));
